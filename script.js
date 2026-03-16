@@ -26,7 +26,7 @@ function calcular() {
   else if (edad >= 45) puntos += 2;
 
   if (presion >= 140) puntos += 3;
-else if (presion >= 120) puntos += 1;
+  else if (presion >= 120) puntos += 1;
 
   if (colesterol >= 200) puntos += 1;
   else if (colesterol >= 240) puntos += 3;
