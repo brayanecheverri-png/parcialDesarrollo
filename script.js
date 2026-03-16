@@ -11,7 +11,7 @@ function calcular() {
   const colesterol = document.getElementById("colesterol").value;
   const fumador = document.getElementById("fumador").value;
   const textoResultado = document.getElementById("textoResultado");
-  const resultadoDiv = document.getElementById("resultado"); // contenedor completo
+  const resultadoDiv = document.getElementById("resultado");
   const recomendacionesUl = document.getElementById("recomendaciones");
 
   if (!edad || !presion || !colesterol || !fumador) {
@@ -26,10 +26,10 @@ function calcular() {
   else if (edad >= 45) puntos += 2;
 
   if (presion >= 120) puntos += 1;
-  if (presion >= 140) puntos += 3;
+  else if (presion >= 140) puntos += 3;
 
   if (colesterol >= 200) puntos += 1;
-  if (colesterol >= 240) puntos += 3;
+  else if (colesterol >= 240) puntos += 3;
 
   if (fumador === "si") puntos += 3;
 
