@@ -25,8 +25,8 @@ function calcular() {
   if (edad >= 35 && edad <= 44) puntos += 1;
   else if (edad >= 45) puntos += 2;
 
-  if (presion >= 120) puntos += 1;
-  else if (presion >= 140) puntos += 3;
+  if (presion >= 140) puntos += 3;
+else if (presion >= 120) puntos += 1;
 
   if (colesterol >= 200) puntos += 1;
   else if (colesterol >= 240) puntos += 3;
@@ -37,15 +37,15 @@ function calcular() {
   let color = "";
   if (puntos <= 2) {
     riesgo = "Riesgo Bajo";
-    color = "green";
+    color = "#7AFF83";
     textoResultado.style.color = "white";
   } else if (puntos <= 5) {
     riesgo = "Riesgo Moderado";
-    color = "yellow";
+    color = "#FFFB7A";
     textoResultado.style.color = "black";
   } else {
     riesgo = "Riesgo Alto";
-    color = "red";
+    color = "#FF907A";
     textoResultado.style.color = "white";
   }
   textoResultado.textContent = `Nivel de riesgo: ${riesgo} (Puntos: ${puntos})`;

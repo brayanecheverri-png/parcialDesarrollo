@@ -5,7 +5,9 @@ Brayan Steven Echeverri Ospina */
     padding: 0;
     box-sizing: border-box;
 }
-
+input::placeholder{
+    color: white;
+}
 body{
     background:#000000;
     display: flex;
@@ -47,12 +49,11 @@ body{
     }
 
     .formulario{
-        background-color: #000000;
         border: 1px;
-        border-color: #ffffff;
         margin: 10px;
         padding: 10px;
         gap:15px;
+        border: 1px solid white;
 
         .campo{
             background-color: rgb(0, 0, 0);
@@ -61,15 +62,14 @@ body{
             width: 300px;
             border-radius: 5px;
             text-align:left;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
         }
 
         label{
         font-family: 'Poppins', sans-serif;
         font-size:0.8rem;
         font-weight:600;
-        color:#444;
-    }
+        color:#ffffff;
+        }
         input{
         font-family: 'Poppins', sans-serif;
         width:100%;
@@ -78,37 +78,38 @@ body{
         border:1px solid #e5e5e5;
         margin-top:5px;
         font-size:0.9rem;
-    }
+        background-color: #000000;
+        color: #ffffff;
+        }
         button{
-        margin-top:10px;
+        margin-top: 10px;
         padding:12px;
         border:none;
         border-radius:8px;
-        background:#8180d4;
+        background:#000000;
         color:white;
         font-weight:600;
         cursor:pointer;
         transition:0.2s;
         font-family: 'Poppins', sans-serif;
+        border:1px solid #e5e5e5;
     }
         button:active{
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        background-color: #2e2d82;
+        background-color: #cdcdcd;
         transition:all ease 5s;
     }
 
         button:hover{
         transform: translate(-2px);
-        background:#1f1f5c;
+        background:#bfbfbf;
     }
-
     }
 .resultado{
     width: 100%;
     text-align: center;
     align-items: center;
     h2{
-        color: aqua;
+        color: rgb(255, 255, 255);
         text-align: center;
         align-items: center;
     }
